@@ -1,1 +1,975 @@
-    <div class="summary-card" style="margin-bottom:22px;">      <p><b>Outreach will keep compounding.</b> As covered above, the targeted connection push to 150+ senior professionals at PwC, EY, Deloitte, Accenture, and similar firms is still in its early acceptance window. We'll track acceptance rate and its downstream effect on reach and engagement closely in the Month 2 report.</p>    </div>     <ol class="rec-list">      <li>        <div class="rec-body">          <b>Lead with core-expertise + first-person framing</b>          <p>Posts 1 and 7 prove this combination works — GCC/transformation topics told through a direct, personal lens. Plan at least 2–3 posts in Month 2 in this exact style.</p>        </div>      </li>      <li>        <div class="rec-body">          <b>Keep one personal/human post per month</b>          <p>Post 4's reach shows the audience responds well to a break from business content. One well-placed personal story per month keeps the profile feeling human, not just promotional.</p>        </div>      </li>      <li>        <div class="rec-body">          <b>End posts with a direct question</b>          <p>Comment counts are the softest metric this month. A clear, specific question at the end of each post (not "thoughts?") should help convert readers into commenters.</p>        </div>      </li>      <li>        <div class="rec-body">          <b>Re-test the "scorecard" idea with a lighter hook</b>          <p>The underlying topic (GCC location scorecards) is on-brand and relevant — the framing just needs to be punchier or paired with a visual/carousel to land better next time.</p>        </div>      </li>      <li>        <div class="rec-body">          <b>Track reposts and new connections as the key growth signals</b>          <p>Post 5 is the only post that broke into 2nd/3rd-degree networks. Alongside reposts, the acceptance rate on this month's targeted outreach will be a leading indicator of network growth — Month 2 reporting will track both closely.</p>        </div>      </li>    </ol>  </section>   <footer>    <span>Month 1 Performance Report · Prepared for Krishnakumar Parthasarathy</span>    <span>LinkedIn Analytics · Compiled August 2026</span>  </footer> </div> </body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LinkedIn Performance Report — Month 1</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#14213D;
+    --paper:#F7F5F1;
+    --card:#FFFFFF;
+    --brass:#A67C3D;
+    --brass-soft:#EFE3D0;
+    --good:#3F6C51;
+    --good-soft:#E4EDE6;
+    --warn:#9A5A2E;
+    --muted:#6B6F76;
+    --line:#DDD8CE;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'Inter',sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:920px;margin:0 auto;padding:0 28px;}
+  .hero{
+    background:var(--ink);
+    color:var(--paper);
+    padding:64px 0 56px;
+    position:relative;
+    overflow:hidden;
+  }
+  .hero::after{
+    content:"";
+    position:absolute;
+    right:-120px;top:-120px;
+    width:340px;height:340px;
+    border:1px solid rgba(247,245,241,0.14);
+    border-radius:50%;
+  }
+  .hero::before{
+    content:"";
+    position:absolute;
+    right:-40px;top:-40px;
+    width:200px;height:200px;
+    border:1px solid rgba(247,245,241,0.14);
+    border-radius:50%;
+  }
+  .hero-person{
+    display:flex;
+    align-items:center;
+    gap:18px;
+    margin-bottom:28px;
+  }
+  .hero-photo{
+    width:72px;height:72px;
+    border-radius:50%;
+    object-fit:cover;
+    border:2px solid rgba(247,245,241,0.35);
+    flex-shrink:0;
+  }
+  .hero-person-text .pname{
+    font-family:'Newsreader',serif;
+    font-size:19px;
+    font-weight:600;
+    margin:0 0 3px;
+    color:var(--paper);
+  }
+  .hero-person-text .prole{
+    font-size:13px;
+    color:var(--brass);
+    margin:0 0 3px;
+  }
+  .hero-person-text .pmeta{
+    font-size:12px;
+    color:rgba(247,245,241,0.55);
+    margin:0;
+  }
+  .eyebrow{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:12px;
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    color:var(--brass);
+    margin:0 0 18px;
+  }
+  .hero h1{
+    font-family:'Newsreader',serif;
+    font-weight:500;
+    font-size:44px;
+    line-height:1.12;
+    margin:0 0 10px;
+    max-width:600px;
+  }
+  .hero .client{
+    font-size:16px;
+    color:rgba(247,245,241,0.72);
+    margin:0 0 40px;
+  }
+  .hero .client strong{color:var(--paper);font-weight:600;}
+  .stat-row{
+    display:flex;
+    gap:0;
+    flex-wrap:wrap;
+    border-top:1px solid rgba(247,245,241,0.18);
+    padding-top:28px;
+  }
+  .stat{
+    flex:1 1 140px;
+    padding-right:24px;
+  }
+  .stat .num{
+    font-family:'Newsreader',serif;
+    font-size:34px;
+    font-weight:600;
+    display:block;
+    line-height:1;
+  }
+  .stat .lbl{
+    font-size:12px;
+    color:rgba(247,245,241,0.6);
+    margin-top:8px;
+    display:block;
+    text-transform:uppercase;
+    letter-spacing:0.06em;
+  }
+  section{padding:56px 0;}
+  section.tight{padding-top:0;}
+  h2{
+    font-family:'Newsreader',serif;
+    font-weight:500;
+    font-size:26px;
+    margin:0 0 6px;
+  }
+  .section-sub{
+    color:var(--muted);
+    font-size:14.5px;
+    margin:0 0 32px;
+    max-width:600px;
+  }
+  .summary-card{
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:4px;
+    padding:32px;
+    font-size:15.5px;
+    line-height:1.7;
+    color:#33363D;
+  }
+  .summary-card p{margin:0 0 14px;}
+  .summary-card p:last-child{margin-bottom:0;}
+  .chart-card{
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:4px;
+    padding:32px 32px 24px;
+  }
+  .bar-row{
+    display:grid;
+    grid-template-columns:120px 1fr 70px;
+    align-items:center;
+    gap:14px;
+    padding:10px 0;
+    border-bottom:1px solid var(--line);
+    font-size:13.5px;
+  }
+  .bar-row:last-child{border-bottom:none;}
+  .bar-row .plabel{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:12px;
+    color:var(--muted);
+  }
+  .bar-track{
+    height:10px;
+    background:var(--brass-soft);
+    border-radius:2px;
+    overflow:hidden;
+  }
+  .bar-fill{
+    height:100%;
+    background:var(--brass);
+    border-radius:2px;
+  }
+  .bar-fill.top{background:var(--good);}
+  .bar-row .val{
+    font-family:'IBM Plex Mono',monospace;
+    text-align:right;
+    font-weight:600;
+  }
+  .chart-legend{
+    display:flex;gap:20px;margin-top:18px;
+    font-size:12px;color:var(--muted);
+  }
+  .chart-legend span{display:inline-flex;align-items:center;gap:6px;}
+  .dot{width:8px;height:8px;border-radius:50%;display:inline-block;}
+  .dot.brass{background:var(--brass);}
+  .dot.good{background:var(--good);}
+  .post-grid{display:flex;flex-direction:column;gap:16px;}
+  .post-card{
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:4px;
+    padding:26px 28px;
+    position:relative;
+  }
+  .post-card.best{border-color:var(--good);}
+  .post-top{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    gap:16px;
+    margin-bottom:16px;
+  }
+  .post-num{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:12px;
+    color:var(--brass);
+    letter-spacing:0.08em;
+    margin:0 0 6px;
+  }
+  .post-topic{
+    font-family:'Newsreader',serif;
+    font-size:19px;
+    font-weight:600;
+    margin:0;
+  }
+  .badge{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:10.5px;
+    text-transform:uppercase;
+    letter-spacing:0.06em;
+    padding:4px 9px;
+    border-radius:20px;
+    white-space:nowrap;
+    height:fit-content;
+  }
+  .badge.good{background:var(--good-soft);color:var(--good);}
+  .badge.watch{background:#F3E7DC;color:var(--warn);}
+  .metrics-row{
+    display:flex;
+    gap:28px;
+    flex-wrap:wrap;
+    margin-bottom:14px;
+  }
+  .metric{font-size:13.5px;color:var(--muted);}
+  .metric b{
+    color:var(--ink);
+    font-family:'IBM Plex Mono',monospace;
+    font-size:15px;
+    display:block;
+    margin-bottom:2px;
+  }
+  .post-note{
+    font-size:13.5px;
+    line-height:1.6;
+    color:#4A4D54;
+    border-top:1px solid var(--line);
+    padding-top:14px;
+    margin-top:2px;
+  }
+  .post-link{
+    font-size:12px;
+    display:inline-block;
+    margin-top:10px;
+    color:var(--brass);
+    text-decoration:none;
+    border-bottom:1px solid transparent;
+  }
+  .post-link:hover{border-bottom-color:var(--brass);}
+  .insight-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:16px;
+  }
+  .insight-card{
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:4px;
+    padding:24px;
+  }
+  .insight-card h3{
+    font-family:'Newsreader',serif;
+    font-size:16px;
+    margin:0 0 10px;
+    display:flex;
+    align-items:center;
+    gap:8px;
+  }
+  .insight-card ul{
+    margin:0;padding-left:18px;
+    font-size:13.5px;
+    line-height:1.65;
+    color:#42454C;
+  }
+  .insight-card li{margin-bottom:6px;}
+  .rec-list{list-style:none;margin:0;padding:0;counter-reset:rec;}
+  .rec-list li{
+    counter-increment:rec;
+    display:flex;
+    gap:18px;
+    padding:18px 0;
+    border-bottom:1px solid var(--line);
+  }
+  .rec-list li:last-child{border-bottom:none;}
+  .rec-list li::before{
+    content:counter(rec, decimal-leading-zero);
+    font-family:'IBM Plex Mono',monospace;
+    font-size:13px;
+    color:var(--brass);
+    flex-shrink:0;
+    padding-top:2px;
+  }
+  .rec-list .rec-body b{
+    display:block;
+    font-size:14.5px;
+    margin-bottom:4px;
+  }
+  .rec-list .rec-body p{
+    margin:0;
+    font-size:13.5px;
+    color:var(--muted);
+    line-height:1.6;
+  }
+  .discovery-card{
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:4px;
+    padding:30px 32px;
+    margin-bottom:20px;
+  }
+  .discovery-stats{display:flex;gap:56px;margin-bottom:26px;flex-wrap:wrap;}
+  .stat-block .num{
+    font-family:'Newsreader',serif;
+    font-size:32px;font-weight:600;
+    display:block;line-height:1;color:var(--ink);
+  }
+  .stat-block .lbl{
+    font-size:12px;color:var(--muted);
+    text-transform:uppercase;letter-spacing:0.05em;
+    margin-top:6px;display:block;
+  }
+  .split-label{display:flex;justify-content:space-between;font-size:12.5px;color:#42454C;margin-bottom:7px;}
+  .split-label b{color:var(--ink);}
+  .split-track{display:flex;height:11px;border-radius:2px;overflow:hidden;}
+  .split-fill.in{background:var(--ink);}
+  .split-fill.out{background:var(--brass);}
+  .split-caption{display:flex;justify-content:space-between;font-size:11px;color:var(--muted);margin-top:8px;}
+  .demo-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;}
+  .demo-card{
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:4px;
+    padding:22px 24px;
+  }
+  .demo-card h4{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:10.5px;text-transform:uppercase;
+    letter-spacing:0.08em;color:var(--brass);
+    margin:0 0 16px;
+  }
+  .demo-item{margin-bottom:13px;}
+  .demo-item:last-child{margin-bottom:0;}
+  .demo-top{display:flex;justify-content:space-between;font-size:12.5px;margin-bottom:5px;gap:8px;}
+  .demo-top span:first-child{color:#33363D;}
+  .demo-top span:last-child{font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:12px;color:var(--ink);white-space:nowrap;}
+  .demo-track{height:5px;background:var(--brass-soft);border-radius:2px;overflow:hidden;}
+  .demo-fill{height:100%;background:var(--brass);border-radius:2px;}
+  .engager-table{
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:4px;
+    overflow:hidden;
+  }
+  .eg-head{
+    display:grid;
+    grid-template-columns:1.4fr 2fr 1fr 1.1fr;
+    gap:14px;
+    padding:14px 24px;
+    background:var(--ink);
+    color:rgba(247,245,241,0.65);
+    font-family:'IBM Plex Mono',monospace;
+    font-size:10.5px;
+    text-transform:uppercase;
+    letter-spacing:0.06em;
+  }
+  .eg-row{
+    display:grid;
+    grid-template-columns:1.4fr 2fr 1fr 1.1fr;
+    gap:14px;
+    padding:16px 24px;
+    border-bottom:1px solid var(--line);
+    align-items:center;
+  }
+  .eg-row:last-child{border-bottom:none;}
+  .eg-row:nth-child(even){background:#FBFAF7;}
+  .eg-name{font-weight:600;font-size:13.5px;color:var(--ink);}
+  .eg-title{font-size:12.5px;color:var(--muted);line-height:1.4;}
+  .eg-posts{font-family:'IBM Plex Mono',monospace;font-size:12px;color:#42454C;}
+  .eg-tag{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:10px;text-transform:uppercase;letter-spacing:0.05em;
+    padding:4px 8px;border-radius:20px;
+    display:inline-block;width:fit-content;
+  }
+  .eg-tag.repeat{background:var(--good-soft);color:var(--good);}
+  .eg-tag.exec{background:var(--brass-soft);color:var(--brass);}
+  .eg-tag.reach{background:#E8ECF3;color:#3A4E7A;}
+  @media(max-width:640px){
+    .demo-grid{grid-template-columns:1fr;}
+    .discovery-stats{gap:32px;}
+    .eg-head{display:none;}
+    .eg-row{grid-template-columns:1fr;gap:6px;padding:16px 20px;}
+  }
+  .outreach-card{
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:4px;
+    padding:30px 32px;
+    margin-bottom:20px;
+  }
+  .funnel-row{display:flex;gap:0;flex-wrap:wrap;margin-bottom:26px;}
+  .funnel-block{flex:1 1 140px;padding-right:20px;position:relative;}
+  .funnel-block:not(:last-child)::after{
+    content:"→";
+    position:absolute;
+    right:-2px;top:6px;
+    color:var(--line);
+    font-size:20px;
+  }
+  .funnel-block .num{
+    font-family:'Newsreader',serif;
+    font-size:30px;font-weight:600;
+    display:block;line-height:1;color:var(--ink);
+  }
+  .funnel-block .lbl{
+    font-size:11.5px;color:var(--muted);
+    text-transform:uppercase;letter-spacing:0.05em;
+    margin-top:7px;display:block;
+  }
+  .tag-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px;}
+  .tag-pill{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:11px;
+    background:var(--brass-soft);
+    color:var(--brass);
+    padding:5px 11px;
+    border-radius:20px;
+  }
+  .outreach-status{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-size:12.5px;
+    color:var(--muted);
+    margin-top:4px;
+  }
+  .status-dot{
+    width:8px;height:8px;border-radius:50%;
+    background:var(--warn);
+    flex-shrink:0;
+  }
+  footer{
+    border-top:1px solid var(--line);
+    padding:28px 0 48px;
+    font-size:12px;
+    color:var(--muted);
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:10px;
+  }
+  @media(max-width:640px){
+    .hero h1{font-size:32px;}
+    .stat{flex:1 1 45%;margin-bottom:18px;}
+    .insight-grid{grid-template-columns:1fr;}
+    .bar-row{grid-template-columns:80px 1fr 55px;}
+  }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="wrap">
+    <div class="hero-person">
+      <img class="hero-photo" src="krishnakumar-photo.jpg" alt="Krishnakumar Parthasarathy">
+      <div class="hero-person-text">
+        <p class="pname">Krishnakumar Parthasarathy</p>
+        <p class="prole">Business Transformation Advisor · Altius</p>
+        <p class="pmeta">Chennai, Tamil Nadu, India · Helping organizations build high‑performing Global Capability Centres and transformation programmes</p>
+      </div>
+    </div>
+    <p class="eyebrow">Month 1 · Social Performance Report</p>
+    <h1>LinkedIn presence is off to a strong, well-targeted start.</h1>
+    <p class="client">Prepared for <strong>Krishnakumar Parthasarathy</strong> — Trusted Advisor to CXO Suite</p>
+    <div class="stat-row">
+      <div class="stat"><span class="num">2,404</span><span class="lbl">Total impressions</span></div>
+      <div class="stat"><span class="num">100</span><span class="lbl">Total likes</span></div>
+      <div class="stat"><span class="num">21</span><span class="lbl">Total comments</span></div>
+      <div class="stat"><span class="num">5.1%</span><span class="lbl">Avg. engagement rate</span></div>
+    </div>
+  </div>
+</div>
+
+<div class="wrap">
+
+  <section class="tight" style="padding-top:56px;">
+    <h2>Executive summary</h2>
+    <p class="section-sub">Seven posts published this month, spanning industry insight, leadership reflection, and personal storytelling.</p>
+    <div class="summary-card">
+      <p>Across 7 posts this month, the profile generated <b>2,404 impressions</b> and <b>122 total engagements</b> (likes, comments, and 1 repost), for an average engagement rate of <b>5.1%</b> — a solid baseline for a personal brand still building momentum on LinkedIn.</p>
+      <p>The audience quality is the standout finding: engagers consistently include Partners and Directors from PwC, EY, Altius, and other top-tier firms, along with CXOs and specialists in Finance Transformation, GCC strategy, and Private Equity. This is a highly relevant, senior audience — exactly the buyer profile a business transformation consultant wants engaging with their content.</p>
+      <p>Post 1 (Outsourcing / GCC / Shared Services) drove the highest reach at 834 impressions — this is squarely the consultant's core expertise, and the market responded. Post 5 (Business Transformation / Organizational Change) had the strongest engagement rate at 9.2% and was the only post to earn a repost, extending reach beyond the immediate network.</p>
+    </div>
+  </section>
+
+  <section class="tight">
+    <h2>Audience &amp; discovery</h2>
+    <p class="section-sub">Who is actually seeing this content — pulled from LinkedIn's discovery and demographics data for the month.</p>
+
+    <div class="discovery-card">
+      <div class="discovery-stats">
+        <div class="stat-block"><span class="num">2,158</span><span class="lbl">Impressions</span></div>
+        <div class="stat-block"><span class="num">977</span><span class="lbl">Members reached</span></div>
+      </div>
+      <div class="split-label"><span>In-network (followers &amp; connections)</span><b>49%</b></div>
+      <div class="split-track">
+        <div class="split-fill in" style="width:49%"></div>
+        <div class="split-fill out" style="width:51%"></div>
+      </div>
+      <div class="split-caption"><span>49% in-network</span><span>51% out-of-network</span></div>
+    </div>
+
+    <div class="summary-card" style="margin-bottom:20px;">
+      <p>Just over half of the audience this month came from <b>outside the existing network</b> — a healthy sign for a profile still in its first month. It means posts are being surfaced by LinkedIn's algorithm to relevant strangers, not just recycled among the same connections.</p>
+    </div>
+
+    <div class="demo-grid">
+      <div class="demo-card">
+        <h4>Seniority</h4>
+        <div class="demo-item"><div class="demo-top"><span>Senior</span><span>29%</span></div><div class="demo-track"><div class="demo-fill" style="width:29%"></div></div></div>
+        <div class="demo-item"><div class="demo-top"><span>Director</span><span>14%</span></div><div class="demo-track"><div class="demo-fill" style="width:14%"></div></div></div>
+        <div class="demo-item"><div class="demo-top"><span>Manager</span><span>11%</span></div><div class="demo-track"><div class="demo-fill" style="width:11%"></div></div></div>
+        <div class="demo-item"><div class="demo-top"><span>VP</span><span>9%</span></div><div class="demo-track"><div class="demo-fill" style="width:9%"></div></div></div>
+        <div class="demo-item"><div class="demo-top"><span>Partner / CXO</span><span>8%</span></div><div class="demo-track"><div class="demo-fill" style="width:8%"></div></div></div>
+      </div>
+      <div class="demo-card">
+        <h4>Industry</h4>
+        <div class="demo-item"><div class="demo-top"><span>IT Services &amp; Consulting</span><span>22%</span></div><div class="demo-track"><div class="demo-fill" style="width:22%"></div></div></div>
+        <div class="demo-item"><div class="demo-top"><span>Business Consulting</span><span>12%</span></div><div class="demo-track"><div class="demo-fill" style="width:12%"></div></div></div>
+        <div class="demo-item"><div class="demo-top"><span>Financial Services</span><span>7%</span></div><div class="demo-track"><div class="demo-fill" style="width:7%"></div></div></div>
+        <div class="demo-item"><div class="demo-top"><span>Software Development</span><span>6%</span></div><div class="demo-track"><div class="demo-fill" style="width:6%"></div></div></div>
+        <div class="demo-item"><div class="demo-top"><span>Accounting</span><span>4%</span></div><div class="demo-track"><div class="demo-fill" style="width:4%"></div></div></div>
+      </div>
+      <div class="demo-card">
+        <h4>Company size</h4>
+        <div class="demo-item"><div class="demo-top"><span>10,001+ employees</span><span>38%</span></div><div class="demo-track"><div class="demo-fill" style="width:38%"></div></div></div>
+        <div class="demo-item"><div class="demo-top"><span>1,001–5,000</span><span>10%</span></div><div class="demo-track"><div class="demo-fill" style="width:10%"></div></div></div>
+        <div class="demo-item"><div class="demo-top"><span>51–200</span><span>7%</span></div><div class="demo-track"><div class="demo-fill" style="width:7%"></div></div></div>
+        <div class="demo-item"><div class="demo-top"><span>2–10</span><span>6%</span></div><div class="demo-track"><div class="demo-fill" style="width:6%"></div></div></div>
+        <div class="demo-item"><div class="demo-top"><span>201–500</span><span>6%</span></div><div class="demo-track"><div class="demo-fill" style="width:6%"></div></div></div>
+      </div>
+      <div class="demo-card">
+        <h4>Location</h4>
+        <div class="demo-item"><div class="demo-top"><span>Greater Bengaluru</span><span>14%</span></div><div class="demo-track"><div class="demo-fill" style="width:14%"></div></div></div>
+        <div class="demo-item"><div class="demo-top"><span>Greater Delhi</span><span>9%</span></div><div class="demo-track"><div class="demo-fill" style="width:9%"></div></div></div>
+        <div class="demo-item"><div class="demo-top"><span>Greater Chennai</span><span>8%</span></div><div class="demo-track"><div class="demo-fill" style="width:8%"></div></div></div>
+        <div class="demo-item"><div class="demo-top"><span>Mumbai Metro</span><span>8%</span></div><div class="demo-track"><div class="demo-fill" style="width:8%"></div></div></div>
+        <div class="demo-item"><div class="demo-top"><span>Greater Hyderabad</span><span>4%</span></div><div class="demo-track"><div class="demo-fill" style="width:4%"></div></div></div>
+      </div>
+      <div class="demo-card">
+        <h4>Company</h4>
+        <div class="demo-item"><div class="demo-top"><span>PwC India</span><span>4%</span></div><div class="demo-track"><div class="demo-fill" style="width:4%"></div></div></div>
+        <div class="demo-item"><div class="demo-top"><span>PwC</span><span>2%</span></div><div class="demo-track"><div class="demo-fill" style="width:2%"></div></div></div>
+        <div class="demo-item"><div class="demo-top"><span>Accenture</span><span>2%</span></div><div class="demo-track"><div class="demo-fill" style="width:2%"></div></div></div>
+        <div class="demo-item"><div class="demo-top"><span>EY</span><span>1%</span></div><div class="demo-track"><div class="demo-fill" style="width:1%"></div></div></div>
+        <div class="demo-item"><div class="demo-top"><span>Deloitte</span><span>1%</span></div><div class="demo-track"><div class="demo-fill" style="width:1%"></div></div></div>
+      </div>
+      <div class="demo-card">
+        <h4>Job title</h4>
+        <div class="demo-item"><div class="demo-top"><span>Founder</span><span>3%</span></div><div class="demo-track"><div class="demo-fill" style="width:3%"></div></div></div>
+        <div class="demo-item"><div class="demo-top"><span>Project Manager</span><span>2%</span></div><div class="demo-track"><div class="demo-fill" style="width:2%"></div></div></div>
+        <div class="demo-item"><div class="demo-top"><span>Co-Founder</span><span>1%</span></div><div class="demo-track"><div class="demo-fill" style="width:1%"></div></div></div>
+        <div class="demo-item"><div class="demo-top"><span>Chief Executive Officer</span><span>1%</span></div><div class="demo-track"><div class="demo-fill" style="width:1%"></div></div></div>
+        <div class="demo-item"><div class="demo-top"><span>Managing Director</span><span>1%</span></div><div class="demo-track"><div class="demo-fill" style="width:1%"></div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="tight">
+    <h2>Reach by post</h2>
+    <p class="section-sub">Impressions across all 7 posts published this month, ranked highest to lowest.</p>
+    <div class="chart-card">
+      <div class="bar-row">
+        <span class="plabel">Post 1</span>
+        <div class="bar-track"><div class="bar-fill top" style="width:100%"></div></div>
+        <span class="val">834</span>
+      </div>
+      <div class="bar-row">
+        <span class="plabel">Post 4</span>
+        <div class="bar-track"><div class="bar-fill" style="width:45.2%"></div></div>
+        <span class="val">377</span>
+      </div>
+      <div class="bar-row">
+        <span class="plabel">Post 3</span>
+        <div class="bar-track"><div class="bar-fill" style="width:41.1%"></div></div>
+        <span class="val">343</span>
+      </div>
+      <div class="bar-row">
+        <span class="plabel">Post 5</span>
+        <div class="bar-track"><div class="bar-fill top" style="width:28.8%"></div></div>
+        <span class="val">240</span>
+      </div>
+      <div class="bar-row">
+        <span class="plabel">Post 6</span>
+        <div class="bar-track"><div class="bar-fill" style="width:31.5%"></div></div>
+        <span class="val">263</span>
+      </div>
+      <div class="bar-row">
+        <span class="plabel">Post 2</span>
+        <div class="bar-track"><div class="bar-fill" style="width:23.4%"></div></div>
+        <span class="val">195</span>
+      </div>
+      <div class="bar-row">
+        <span class="plabel">Post 7</span>
+        <div class="bar-track"><div class="bar-fill top" style="width:18.2%"></div></div>
+        <span class="val">152</span>
+      </div>
+      <div class="chart-legend">
+        <span><i class="dot good"></i>Top engagement rate (Posts 1, 5, 7)</span>
+        <span><i class="dot brass"></i>Standard</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="tight">
+    <h2>Post-by-post breakdown</h2>
+    <p class="section-sub">All 7 posts from the first month, with engagement rate and a read on why each performed the way it did.</p>
+    <div class="post-grid">
+
+      <div class="post-card best">
+        <div class="post-top">
+          <div>
+            <p class="post-num">POST 01 · HIGHEST REACH</p>
+            <p class="post-topic">Outsourcing, GCC &amp; Shared Services</p>
+          </div>
+          <span class="badge good">6.0% engagement</span>
+        </div>
+        <div class="metrics-row">
+          <div class="metric"><b>834</b>Impressions</div>
+          <div class="metric"><b>45</b>Likes</div>
+          <div class="metric"><b>5</b>Comments</div>
+        </div>
+        <p class="post-note">The month's clear anchor post. Core-expertise content on GCCs and shared services pulled the widest reach of the month and drew engagement from Associate Partners and senior leaders in Data &amp; AI service delivery — this is the topic lane to lean into again.</p>
+        <a class="post-link" href="https://www.linkedin.com/posts/krishnakumar-parthasarathy-business-transformation-consultant_outsourcing-gcc-sharedservices-activity-7487718524778594304-1lcF" target="_blank">View post →</a>
+      </div>
+
+      <div class="post-card">
+        <div class="post-top">
+          <div>
+            <p class="post-num">POST 02</p>
+            <p class="post-topic">Leadership, Career Growth &amp; Networking</p>
+          </div>
+          <span class="badge watch">4.6% engagement</span>
+        </div>
+        <div class="metrics-row">
+          <div class="metric"><b>195</b>Impressions</div>
+          <div class="metric"><b>7</b>Likes</div>
+          <div class="metric"><b>2</b>Comments</div>
+        </div>
+        <p class="post-note">Lowest reach of the month, though the small audience it did reach was senior (a COO Partner and a Senior Operations Executive). General leadership/networking themes are common on LinkedIn feeds — this topic likely needed a sharper hook or a more specific angle to stand out.</p>
+        <a class="post-link" href="https://www.linkedin.com/posts/krishnakumar-parthasarathy-business-transformation-consultant_leadership-careergrowth-networking-activity-7488435715186319361-0_HG" target="_blank">View post →</a>
+      </div>
+
+      <div class="post-card">
+        <div class="post-top">
+          <div>
+            <p class="post-num">POST 03</p>
+            <p class="post-topic">Leadership &amp; Growth Mindset</p>
+          </div>
+          <span class="badge watch">2.9% engagement</span>
+        </div>
+        <div class="metrics-row">
+          <div class="metric"><b>343</b>Impressions</div>
+          <div class="metric"><b>7</b>Likes</div>
+          <div class="metric"><b>3</b>Comments</div>
+        </div>
+        <p class="post-note">Reasonable reach but the lowest engagement rate on a per-impression basis. Engagers included Big-4 alumni and a senior product leader — decent audience quality, but the content didn't convert views into action as well as other posts.</p>
+        <a class="post-link" href="https://www.linkedin.com/posts/krishnakumar-parthasarathy-business-transformation-consultant_leadership-growthmindset-consulting-activity-7490255206014853120-AbMM" target="_blank">View post →</a>
+      </div>
+
+      <div class="post-card">
+        <div class="post-top">
+          <div>
+            <p class="post-num">POST 04</p>
+            <p class="post-topic">Personal Story — Martial Arts &amp; Passion</p>
+          </div>
+          <span class="badge good">3.7% engagement</span>
+        </div>
+        <div class="metrics-row">
+          <div class="metric"><b>377</b>Impressions</div>
+          <div class="metric"><b>12</b>Likes</div>
+          <div class="metric"><b>2</b>Comments</div>
+        </div>
+        <p class="post-note">Second-highest reach of the month, and it's a personal, non-business story. This confirms that authentic, human posts travel well even on a consulting-focused profile — a useful lever to mix in alongside expertise content.</p>
+        <a class="post-link" href="https://www.linkedin.com/posts/krishnakumar-parthasarathy-business-transformation-consultant_martial-arts-have-been-my-passion-ever-since-activity-7491458074587578368-U4Os" target="_blank">View post →</a>
+      </div>
+
+      <div class="post-card best">
+        <div class="post-top">
+          <div>
+            <p class="post-num">POST 05 · BEST ENGAGEMENT RATE</p>
+            <p class="post-topic">Business Transformation &amp; Organizational Change</p>
+          </div>
+          <span class="badge good">9.2% engagement</span>
+        </div>
+        <div class="metrics-row">
+          <div class="metric"><b>240</b>Impressions</div>
+          <div class="metric"><b>17</b>Likes</div>
+          <div class="metric"><b>4</b>Comments</div>
+          <div class="metric"><b>1</b>Repost</div>
+        </div>
+        <p class="post-note">The strongest performer of the month by rate, and the only post that earned a repost — meaning it reached beyond the existing network into 2nd/3rd-degree audiences, including a PE investor and an enterprise AI executive. Direct, opinionated commentary on transformation clearly resonates.</p>
+        <a class="post-link" href="https://www.linkedin.com/posts/krishnakumar-parthasarathy-business-transformation-consultant_businesstransformation-leadership-organizationalchange-activity-7493520462581223424-GjYn" target="_blank">View post →</a>
+      </div>
+
+      <div class="post-card">
+        <div class="post-top">
+          <div>
+            <p class="post-num">POST 06 · WEAKEST PERFORMER</p>
+            <p class="post-topic">GCC Location Scorecards</p>
+          </div>
+          <span class="badge watch">1.9% engagement</span>
+        </div>
+        <div class="metrics-row">
+          <div class="metric"><b>263</b>Impressions</div>
+          <div class="metric"><b>3</b>Likes</div>
+          <div class="metric"><b>2</b>Comments</div>
+        </div>
+        <p class="post-note">The month's softest result. Despite being on-topic for the consultant's core expertise, this framing (a scorecard critique) drew moderate impressions but very little engagement — likely too niche or too dense a hook for a scroll-speed feed.</p>
+        <a class="post-link" href="https://www.linkedin.com/posts/krishnakumar-parthasarathy-business-transformation-consultant_every-gcc-location-scorecard-looks-the-same-activity-7495691016092553216-v8fH" target="_blank">View post →</a>
+      </div>
+
+      <div class="post-card best">
+        <div class="post-top">
+          <div>
+            <p class="post-num">POST 07</p>
+            <p class="post-topic">First-Person Transformation Story</p>
+          </div>
+          <span class="badge good">7.9% engagement</span>
+        </div>
+        <div class="metrics-row">
+          <div class="metric"><b>152</b>Impressions</div>
+          <div class="metric"><b>9</b>Likes</div>
+          <div class="metric"><b>3</b>Comments</div>
+        </div>
+        <p class="post-note">Lowest reach of the closing week, but the second-best engagement rate of the month. A CEO-level advisor and a repeat PE investor engaged — a strong signal that first-person "every time I've..." narrative openers punch above their impression count.</p>
+        <a class="post-link" href="https://www.linkedin.com/posts/krishnakumar-parthasarathy-business-transformation-consultant_every-time-ive-helmed-a-business-transformation-activity-7496817641790058496-i3OM" target="_blank">View post →</a>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="tight">
+    <h2>Notable people who engaged</h2>
+    <p class="section-sub">A cross-section of the senior names interacting with this content — the clearest proof the right audience is paying attention.</p>
+    <div class="engager-table">
+      <div class="eg-head">
+        <span>Name</span>
+        <span>Role</span>
+        <span>Posts</span>
+        <span>Signal</span>
+      </div>
+      <div class="eg-row">
+        <span class="eg-name">Martin Wirtschafter</span>
+        <span class="eg-title">4× Exit Founder · PE Insider &amp; Investor</span>
+        <span class="eg-posts">Post 5, 7</span>
+        <span class="eg-tag repeat">Repeat · 2nd-degree</span>
+      </div>
+      <div class="eg-row">
+        <span class="eg-name">Gaurav Agarwal</span>
+        <span class="eg-title">Partner &amp; Leader, Finance Transformation, PwC India</span>
+        <span class="eg-posts">Post 4, 5, 7</span>
+        <span class="eg-tag repeat">Repeat · Partner</span>
+      </div>
+      <div class="eg-row">
+        <span class="eg-name">Rajib Arjun</span>
+        <span class="eg-title">Partner, Chief Operating Officer, Altius</span>
+        <span class="eg-posts">Post 2, 4, 5, 6</span>
+        <span class="eg-tag repeat">Repeat · Partner</span>
+      </div>
+      <div class="eg-row">
+        <span class="eg-name">Yadvendar Sharma</span>
+        <span class="eg-title">Senior Operations Executive · Risk, Compliance &amp; Transformation</span>
+        <span class="eg-posts">Post 2, 3, 4, 5</span>
+        <span class="eg-tag repeat">Most frequent</span>
+      </div>
+      <div class="eg-row">
+        <span class="eg-name">Ameya Sahasrabudhe</span>
+        <span class="eg-title">Partner, PwC</span>
+        <span class="eg-posts">Post 4, 5</span>
+        <span class="eg-tag exec">Partner</span>
+      </div>
+      <div class="eg-row">
+        <span class="eg-name">Sayantan Chatterjee</span>
+        <span class="eg-title">Partner, PwC India — Digital &amp; AI Strategy</span>
+        <span class="eg-posts">Post 1</span>
+        <span class="eg-tag exec">Partner</span>
+      </div>
+      <div class="eg-row">
+        <span class="eg-name">Vineeta Doshi</span>
+        <span class="eg-title">Partner at EY</span>
+        <span class="eg-posts">Post 1</span>
+        <span class="eg-tag exec">Partner</span>
+      </div>
+      <div class="eg-row">
+        <span class="eg-name">Adi Agrawal</span>
+        <span class="eg-title">CEO, Board &amp; Executive Advisor — Strategy, Risk, Transformation</span>
+        <span class="eg-posts">Post 7</span>
+        <span class="eg-tag exec">C-suite</span>
+      </div>
+      <div class="eg-row">
+        <span class="eg-name">Aditya Thakur</span>
+        <span class="eg-title">CEO — Strategy and Transformation</span>
+        <span class="eg-posts">Post 5</span>
+        <span class="eg-tag exec">C-suite</span>
+      </div>
+      <div class="eg-row">
+        <span class="eg-name">Gabriel Millien</span>
+        <span class="eg-title">Enterprise AI Execution Architect — advisor to Nestlé, Pfizer, Sanofi</span>
+        <span class="eg-posts">Post 5</span>
+        <span class="eg-tag reach">Out-of-network</span>
+      </div>
+      <div class="eg-row">
+        <span class="eg-name">Nagaraj B.S.</span>
+        <span class="eg-title">Partner, Price Waterhouse &amp; Co LLP</span>
+        <span class="eg-posts">Post 1</span>
+        <span class="eg-tag exec">Partner</span>
+      </div>
+      <div class="eg-row">
+        <span class="eg-name">Bhavna Kansal</span>
+        <span class="eg-title">Founder, Celevare — LinkedIn Visibility &amp; Executive Branding</span>
+        <span class="eg-posts">Post 2, 3, 4</span>
+        <span class="eg-tag repeat">Repeat engager</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="tight">
+    <h2>What the data is telling us</h2>
+    <p class="section-sub">Two lenses on the same seven posts: what earned reach, and what earned reaction.</p>
+    <div class="insight-grid">
+      <div class="insight-card">
+        <h3>✓ What worked</h3>
+        <ul>
+          <li>Core-expertise content (GCC, outsourcing, transformation) consistently drew the most senior engagers — Partners at PwC/EY, COOs, and CXO advisors.</li>
+          <li>First-person, opinionated framing ("Every time I've...") outperformed generic advice posts on engagement rate.</li>
+          <li>One personal story (martial arts) posted mid-month pulled the second-highest reach — human content still travels on this profile.</li>
+          <li>Post 5's repost shows that a sharp point of view on organizational change can break out of the immediate network.</li>
+        </ul>
+      </div>
+      <div class="insight-card">
+        <h3>△ What to adjust</h3>
+        <ul>
+          <li>General leadership/networking posts (Post 2) underperformed on both reach and engagement — this lane needs a more specific, contrarian, or story-led hook.</li>
+          <li>Dense, framework-style posts (Post 6, GCC scorecards) reached people but didn't move them to react — consider simplifying the hook or adding a clear question/CTA.</li>
+          <li>No posts this month used a poll, document carousel, or video — worth testing at least one different format in Month 2.</li>
+          <li>Comment volume across the board (avg. 3/post) is light relative to likes — replies and questions in captions could help draw more conversation.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="tight">
+    <h2>Network growth &amp; outreach</h2>
+    <p class="section-sub">A parallel effort to the content strategy — building direct connections with the exact audience these posts are meant to reach.</p>
+
+    <div class="outreach-card">
+      <div class="funnel-row">
+        <div class="funnel-block">
+          <span class="num">150+</span>
+          <span class="lbl">Professionals selected</span>
+        </div>
+        <div class="funnel-block">
+          <span class="num">50%+</span>
+          <span class="lbl">Connection requests sent</span>
+        </div>
+        <div class="funnel-block">
+          <span class="num">Early</span>
+          <span class="lbl">Acceptance ratio (ramping up)</span>
+        </div>
+      </div>
+      <div class="outreach-status">
+        <span class="status-dot"></span>
+        <span>Outreach started roughly a week ago — still in its early window.</span>
+      </div>
+    </div>
+
+    <div class="summary-card" style="margin-bottom:20px;">
+      <p>We hand-picked a list of <b>150+ senior professionals</b> at the target companies most aligned with this profile's positioning — firms like PwC, EY, Deloitte, Accenture, KPMG, IBM, TCS, ANSR, and Zinnov — filtered specifically for <b>Director, VP, Managing Director, and Partner-level</b> roles in GCC strategy, technology consulting, and business transformation. This is the same buyer profile that's already engaging organically with the content, so the outreach is designed to compound that momentum rather than chase a colder audience.</p>
+      <p>More than half of the planned requests have already gone out. The acceptance ratio so far is on the lower side, which is expected — the outreach only began about a week ago, and LinkedIn connection acceptances typically build gradually over several weeks rather than all at once. As more of these senior professionals accept and start seeing future posts in their feed, we expect this to directly lift both reach and engagement quality in the coming months.</p>
+    </div>
+
+    <div class="demo-card" style="margin-bottom:0;">
+      <h4>Target companies in this list</h4>
+      <div class="tag-row">
+        <span class="tag-pill">PwC</span>
+        <span class="tag-pill">EY</span>
+        <span class="tag-pill">Deloitte</span>
+        <span class="tag-pill">Accenture</span>
+        <span class="tag-pill">KPMG</span>
+        <span class="tag-pill">IBM</span>
+        <span class="tag-pill">TCS</span>
+        <span class="tag-pill">ANSR</span>
+        <span class="tag-pill">Zinnov</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="tight">
+    <h2>Plan for next month</h2>
+    <p class="section-sub">Where the content strategy goes next, and how the network-growth push is already underway.</p>
+
+    <div class="summary-card" style="margin-bottom:22px;">
+      <p><b>Outreach will keep compounding.</b> As covered above, the targeted connection push to 150+ senior professionals at PwC, EY, Deloitte, Accenture, and similar firms is still in its early acceptance window. We'll track acceptance rate and its downstream effect on reach and engagement closely in the Month 2 report.</p>
+    </div>
+
+    <ol class="rec-list">
+      <li>
+        <div class="rec-body">
+          <b>Lead with core-expertise + first-person framing</b>
+          <p>Posts 1 and 7 prove this combination works — GCC/transformation topics told through a direct, personal lens. Plan at least 2–3 posts in Month 2 in this exact style.</p>
+        </div>
+      </li>
+      <li>
+        <div class="rec-body">
+          <b>Keep one personal/human post per month</b>
+          <p>Post 4's reach shows the audience responds well to a break from business content. One well-placed personal story per month keeps the profile feeling human, not just promotional.</p>
+        </div>
+      </li>
+      <li>
+        <div class="rec-body">
+          <b>End posts with a direct question</b>
+          <p>Comment counts are the softest metric this month. A clear, specific question at the end of each post (not "thoughts?") should help convert readers into commenters.</p>
+        </div>
+      </li>
+      <li>
+        <div class="rec-body">
+          <b>Re-test the "scorecard" idea with a lighter hook</b>
+          <p>The underlying topic (GCC location scorecards) is on-brand and relevant — the framing just needs to be punchier or paired with a visual/carousel to land better next time.</p>
+        </div>
+      </li>
+      <li>
+        <div class="rec-body">
+          <b>Track reposts and new connections as the key growth signals</b>
+          <p>Post 5 is the only post that broke into 2nd/3rd-degree networks. Alongside reposts, the acceptance rate on this month's targeted outreach will be a leading indicator of network growth — Month 2 reporting will track both closely.</p>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <footer>
+    <span>Month 1 Performance Report · Prepared for Krishnakumar Parthasarathy</span>
+    <span>LinkedIn Analytics · Compiled August 2026</span>
+  </footer>
+
+</div>
+
+</body>
+</html>
